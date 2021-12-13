@@ -1,0 +1,95 @@
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+}
+    
+section {
+    padding: 2rem 15%;
+}
+.products .con h3{
+    font-size: 3rem;
+    color:rgb(72, 72, 72);
+    font-family: sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.products .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:6rem;
+    padding-bottom: 10rem;
+}
+
+.products .box-container .box{
+    flex:1 1 25rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    border:.1rem solid rgba(0,0,0,.1);
+    position: relative; 
+    background-color: white;
+}
+
+
+.products .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow:hidden;
+}
+
+.products .box-container .box .image img{
+    height:260px;
+}
+
+.products .box-container .box:hover .image img{
+    transform: scale(1.2);
+    transition: .5s ease-in-out;
+}
+
+.products .box-container .box .image .icons{
+    position: absolute;
+    bottom:-7rem; left:0; right:0;
+    display: flex;
+}
+
+.products .box-container .box:hover .image .icons{
+    bottom:0;
+}
+
+.products .box-container .box .image .icons a{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 1.5rem;
+    width:50%;
+    background:#3e3c37ad;
+    color:white;
+}
+
+
+.products .box-container .box .image .icons a:hover{
+    background:#bb7b25;
+}
+
+.products .box-container .box .content{
+    padding:2rem;
+    text-align: center;
+}
+
+.products .box-container .box .content h3{
+    font-size: 1.5rem;
+    font-family: 'montserratsemibold';
+    color: #161616;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.products .box-container .box .content .price{
+    font-size: 1.5rem;
+    font-family: 'montserratsemibold';
+    color: #161616;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
